@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>card</title>
+    
+    <style>
+
+        * {
+            background: #080808;
+            padding: 0;
+            margin: 0;
+        }
+
+        #pagina {
+            display: grid;
+            place-content: center;
+            padding: 3rem;
+            margin: 4rem;
+            border-radius: 40px;
+            background-color: #2e2e2e;
+            position: center;
+            min-height: 80svh;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 1px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            position: relative;
+            left: 0px;
+            width: 80px;
+            border-radius: 4px;
+            padding: 8px;
+            height: 160px;
+            background-color: #2e2e2e;
+            transition: 0.4s ease-in-out;
+            flex: 1px;
+        }
+        
+        .card:nth-child(1) {
+            background-color: #b881ff;
+        }
+        
+        .card:nth-child(2) {
+            background-color: #ff9950;
+        }
+        
+        .card:nth-child(3) {
+            background-color: #aaec8a;
+        }
+        
+        .card:nth-child(4) {
+            background-color: #ed6a5e;
+        }
+        
+        .card:nth-child(5) {
+            background-color: #99c2fe;
+        }
+        
+        .card:hover {
+            flex: 3;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .title {
+            padding-top: 3rem;
+            text-align: center;
+            background-color: #2e2e2e;
+        }
+
+        .first__title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 50%;
+            font-size: 380%;
+            color: #ed6a5e;
+            background-color: #2e2e2e;
+            margin-top: 1rem;
+        }
+
+        .first__text {
+            font-size: 96%;
+            color: aqua;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            background-color: #2e2e2e;
+        }
+
+        .corpo {
+            display: flex;
+            flex-direction: row;
+            background-color: #2e2e2e;
+        }
+
+        .section {
+            width: 50%;
+            height: auto;
+            border: 1px solid #2e2e2e;
+            border-radius: 8px;
+            margin-top: 25px;
+
+            overflow: hidden;
+            padding: 0 3rem;
+            padding-top: 1rem;
+            text-align: center;
+            background-color: #2e2e2e;
+        }
+
+        .section__title {
+            color: #c296fc;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #2e2e2e;
+            margin-top: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .section__text {
+            font-size: 140%;
+            color: #b881ff;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #2e2e2e;  
+        }
+
+        .loop {
+            display: grid;
+            place-content: center;
+
+            width: 50%;
+            height: auto;
+            border: 1px solid #2e2e2e;
+            border-radius: 8px;
+  
+            overflow: hidden;
+            padding: 0 3rem;
+            padding-top: 1rem;
+            text-align: center;
+            background-color: #2e2e2e;
+        }
+
+    </style>   
+</head>
+
+<body>
+    <main>
+        <section id="pagina">
+
+            <section class ="gallery">
+                <div class ="card">
+                    Card 1
+                </div>
+
+                <div class ="card">
+                    Card 2
+                </div>
+
+                <div class ="card">
+                    Card 3
+                </div>
+
+                <div class ="card">
+                    Card 4
+                </div>
+
+                <div class ="card">
+                    Card 5
+                </div>
+            </section>
+
+            <section class="title">
+                <h1 class="first__title">Ad festum phocarum paratus esto!</h1>
+                <p class="first__text">
+                    Perlustrate abyssos, ubi stellae marinae scintillant
+                </p>
+            </section>
+
+            <section class="corpo">
+                <section class="section">
+                    <h2 class="section__title">Secreta eorum: Vita phocarum</h2>
+                    <p class="section__text">
+                        Tenēte pinnas vestrās, nam incipimus iter per vitam phocarum! Haec amabilia animalia aquatica verae stellae maris sunt,
+                        et fabulae eorundem mirandae sunt. A frigore Arctico ad litora solea calida, phocae artem vitae supra et infra fluctus perficiunt.
+                        Mergāmus in profundum scientiae phocarum!
+                    </p>
+                </section>
+
+                <section class="loop">
+                    <div class="loader"></div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
